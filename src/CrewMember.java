@@ -1,4 +1,4 @@
-
+package src;
 
 public abstract class CrewMember {
     public String name;
@@ -16,10 +16,12 @@ public abstract class CrewMember {
         this.isBusy = isBusy;
         this.currentTask = currentTask;
     }
-    
+
     public abstract void doTask();
+
     public abstract void finalizeTask();
 
+    public abstract void assignTask(String task, String role);
 
     public String getName() {
         return this.name;
@@ -53,5 +55,23 @@ public abstract class CrewMember {
         this.Id = Id;
     }
 
+    public boolean isIsBusy() {
+        return this.isBusy;
+    }
 
+    public boolean getIsBusy() {
+        return this.isBusy;
+    }
+
+    public void setIsBusy(boolean isBusy) {
+        this.isBusy = isBusy;
+    }
+
+    public String getCurrentTask() {
+        return this.currentTask;
+    }
+
+    public void setCurrentTask(String currentTask) {
+        this.currentTask = currentTask;
+    }
 }
