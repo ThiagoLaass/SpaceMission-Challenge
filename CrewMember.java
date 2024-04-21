@@ -1,17 +1,25 @@
 
 
-public class CrewMember {
+public abstract class CrewMember {
     public String name;
-    private Long salary;
+    protected Long salary;
     public String role;
-    private Long Id;
+    protected Long Id;
+    public boolean isBusy;
+    public String currentTask;
 
-    public CrewMember(String name, Long salary, String role, Long Id) {
+    public CrewMember(String name, Long salary, String role, Long Id, boolean isBusy, String currentTask) {
         this.name = name;
         this.salary = salary;
         this.role = role;
         this.Id = Id;
+        this.isBusy = isBusy;
+        this.currentTask = currentTask;
     }
+    
+    public abstract void doTask();
+    public abstract void finalizeTask();
+
 
     public String getName() {
         return this.name;
