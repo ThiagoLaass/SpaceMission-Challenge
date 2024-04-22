@@ -2,7 +2,7 @@ package src;
 
 public class Biologist extends CrewMember{
 
-    public Biologist(String name, Long salary, String role, Long Id, boolean isBusy, String currentTask) {
+    public Biologist(String name, Long salary, String role, int Id, boolean isBusy, String currentTask) {
         super(name, salary, role, Id, isBusy, currentTask);
     }
 

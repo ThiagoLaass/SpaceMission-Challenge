@@ -1,7 +1,7 @@
 package src;
 public class Captain extends CrewMember {
 
-    public Captain(String name, Long salary, String role, Long Id, boolean isBusy, String currentTask) {
+    public Captain(String name, Long salary, String role, int Id, boolean isBusy, String currentTask) {
         super(name, salary, role, Id, isBusy, currentTask);
     }
 

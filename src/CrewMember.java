@@ -4,15 +4,15 @@ public abstract class CrewMember {
     public String name;
     protected Long salary;
     public String role;
-    protected Long Id;
+    protected int Id;
     public boolean isBusy;
     public String currentTask;
 
-    public CrewMember(String name, Long salary, String role, Long Id, boolean isBusy, String currentTask) {
+    public CrewMember(String name, Long salary, String role, int id, boolean isBusy, String currentTask) {
         this.name = name;
         this.salary = salary;
         this.role = role;
-        this.Id = Id;
+        this.Id = id;
         this.isBusy = isBusy;
         this.currentTask = currentTask;
     }
@@ -47,11 +47,11 @@ public abstract class CrewMember {
         this.role = role;
     }
 
-    public Long getId() {
+    public int getId() {
         return this.Id;
     }
 
-    public void setId(Long Id) {
+    public void setId(int Id) {
         this.Id = Id;
     }
 

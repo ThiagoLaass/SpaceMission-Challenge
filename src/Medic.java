@@ -1,9 +1,11 @@
 package src;
 public class Medic extends CrewMember {
 
-    public Medic(String name, Long salary, String role, Long Id, boolean isBusy, String currentTask) {
+    public Medic(String name, Long salary, String role, int Id, boolean isBusy, String currentTask) {
         super(name, salary, role, Id, isBusy, currentTask);
     }
+
+
 
     @Override
     public void doTask() {
