@@ -1,4 +1,5 @@
 package src;
+
 public class Captain extends CrewMember {
 
     public Captain(String name, Long salary, String role, int Id, boolean isBusy, String currentTask) {

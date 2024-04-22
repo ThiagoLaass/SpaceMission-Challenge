@@ -13,8 +13,9 @@ public class SpaceMission {
     private Time missionDuration;
     private Date missionStartDate;
 
-
-    public SpaceMission(String missionName, String missionDescription, String missionStatus, String missionType, String missionDestination, Time missionDuration, Date missionStartDate) {
+    public SpaceMission(String missionName, String missionDescription, String missionStatus, String missionType,
+            String missionDestination, Time missionDuration, Date missionStartDate) {
+                
         this.missionName = missionName;
         this.missionDescription = missionDescription;
         this.missionStatus = missionStatus;
