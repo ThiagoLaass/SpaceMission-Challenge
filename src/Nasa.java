@@ -73,7 +73,4 @@ public class Nasa {
         crewMembers.add(crewMember);
     }
 
-    public void getInfo() {
-
-    }
 }
