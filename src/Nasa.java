@@ -33,6 +33,8 @@ public class Nasa {
 
         spaceMissions.add(new SpaceMission(missionName, missionDescription, "In Progress", missionType,
                 missionDestination, missionDuration, missionStartDate));
+        
+        SpaceMission spaceMission = new SpaceMission(missionName, missionDescription, missionName, missionType, missionDestination, missionDuration, missionStartDate);       
 
         System.out.println("Please Inform how many people are in the crew: ");
         Integer crewNumber = scanner.nextInt();
@@ -50,7 +52,7 @@ public class Nasa {
             boolean isBusy = scanner.nextBoolean();
             System.out.println("Please Inform the current task of the crew member: ");
             String currentTask = scanner.nextLine();
-            
+
             if (role.equals("Captain")) {
                 crewMembers.add(new Captain(name, salary, role, Id, isBusy, currentTask));
             } else if (role.equals("Biologist")) {
